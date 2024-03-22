@@ -1,0 +1,11 @@
+%endheader
+
+
+The text inserted before the endheader tag and after the begintrailer tag are kept after the document generation. You can so define the text according to your needs.
+
+The default.csv file is used as a template:
+- for a given project if it is located in the <Project_Dir>\configuration\documentation directory.
+- for all the projects if it is located in the <ControlBuild_Install_Dir>\tooldir\configuration\documentation directory if there's no other template in the project directories.
+
+
+%begintrailer

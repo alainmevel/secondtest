@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Generator: ControlBuild -->
+
+<APPLICATION NAME="my_app">
+	<PROPERTIES>
+		<PROPERTY NAME="IdentifierProperty" VALUE="51760dc9-4370-4d39-9036-f588dfa6ccf0">
+		</PROPERTY>
+	</PROPERTIES>
+</APPLICATION>

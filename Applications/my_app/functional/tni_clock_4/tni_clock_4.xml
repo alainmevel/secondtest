@@ -1,0 +1,1915 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Generator: ControlBuild -->
+
+<project xmlns="http://www.plcopen.org/xml/tc6_0201.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plcopen.org/xml/tc6_0201.xsd TC6_XML_V10.xsd">
+	<fileHeader companyName="Dassault Syst&#232;mes" productName="ControlBuild" productVersion="2024x Refresh1" creationDateTime="2024-03-18T18:11:39-01:00" />
+	<contentHeader name="tni_clock_4">
+		<coordinateInfo>
+			<fbd>
+				<scaling x="100" y="100" />
+			</fbd>
+			<ld>
+				<scaling x="100" y="100" />
+			</ld>
+			<sfc>
+				<scaling x="32" y="8" />
+			</sfc>
+		</coordinateInfo>
+	</contentHeader>
+	<types>
+		<dataTypes />
+		<pous>
+			<pou name="my_app.tni_clock_4" pouType="program">
+				<interface>
+					<inputVars>
+						<variable name="depth">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>d2b286f0-d4b6-4221-8697-b3727abd94c1</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<inOutVars>
+						<variable name="B1">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>77d3924a-1bef-403a-9dce-f5142a839fe4</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B2">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>e6e1b7c5-04f5-47c8-bcb7-0e1698249152</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B3">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>4d90d9d1-9c11-4f9e-9e40-640f7679068c</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B4">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>8416972f-b969-43b4-bd8c-d1b8c04aa75c</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inoutVars</value>
+							</data>
+						</addData>
+					</inOutVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+				</actions>
+				<body>
+					<FBD>
+						<inVariable localId="0">
+							<position x="100" y="300" />
+							<expression>depth</expression>
+						</inVariable>
+						<inOutVariable localId="1">
+							<position x="100" y="100" />
+							<expression>B1</expression>
+						</inOutVariable>
+						<inOutVariable localId="2">
+							<position x="100" y="150" />
+							<expression>B2</expression>
+						</inOutVariable>
+						<inOutVariable localId="3">
+							<position x="100" y="200" />
+							<expression>B3</expression>
+						</inOutVariable>
+						<inOutVariable localId="4">
+							<position x="100" y="250" />
+							<expression>B4</expression>
+						</inOutVariable>
+						<block localId="5" width="336" height="120" typeName="environment" instanceName="environment">
+							<position x="145" y="48" />
+							<inputVariables>
+								<variable formalParameter="depth">
+									<connectionPointIn>
+										<connection refLocalId="0">
+											<position x="108" y="300" />
+											<position x="126" y="300" />
+											<position x="126" y="96" />
+											<position x="145" y="96" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+							</inputVariables>
+							<inOutVariables>
+								<variable formalParameter="B1">
+									<connectionPointIn>
+										<connection refLocalId="1">
+											<position x="108" y="100" />
+											<position x="126" y="100" />
+											<position x="126" y="120" />
+											<position x="145" y="120" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B2">
+									<connectionPointIn>
+										<connection refLocalId="2">
+											<position x="108" y="150" />
+											<position x="124" y="150" />
+											<position x="124" y="144" />
+											<position x="145" y="144" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B3">
+									<connectionPointIn>
+										<connection refLocalId="3">
+											<position x="108" y="200" />
+											<position x="126" y="200" />
+											<position x="126" y="168" />
+											<position x="145" y="168" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B4">
+									<connectionPointIn>
+										<connection refLocalId="4">
+											<position x="108" y="250" />
+											<position x="126" y="250" />
+											<position x="126" y="168" />
+											<position x="145" y="168" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="hydrostaticPressure">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="absolutePressure">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+							</inOutVariables>
+							<outputVariables>
+								<variable formalParameter="pressure">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="tick">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+							</outputVariables>
+							<addData>
+								<data name="Geensys.CB.UUID" handleUnknown="preserve">
+									<value>a7715d50-dfba-47d3-918b-1af684d5d1d3</value>
+								</data>
+							</addData>
+						</block>
+						<block localId="6" width="360" height="120" typeName="controller" instanceName="controller">
+							<position x="553" y="120" />
+							<inputVariables>
+								<variable formalParameter="pressure">
+									<connectionPointIn>
+										<connection refLocalId="5" formalParameter="pressure">
+											<position x="481" y="96" />
+											<position x="519" y="96" />
+											<position x="519" y="168" />
+											<position x="553" y="168" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="tick">
+									<connectionPointIn>
+										<connection refLocalId="5" formalParameter="tick">
+											<position x="481" y="120" />
+											<position x="515" y="120" />
+											<position x="515" y="192" />
+											<position x="553" y="192" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+							</inputVariables>
+							<inOutVariables>
+								<variable formalParameter="B1">
+									<connectionPointIn>
+										<connection refLocalId="1">
+											<position x="108" y="100" />
+											<position x="321" y="100" />
+											<position x="321" y="216" />
+											<position x="553" y="216" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B2">
+									<connectionPointIn>
+										<connection refLocalId="2">
+											<position x="108" y="150" />
+											<position x="318" y="150" />
+											<position x="318" y="240" />
+											<position x="553" y="240" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B3">
+									<connectionPointIn>
+										<connection refLocalId="3">
+											<position x="108" y="200" />
+											<position x="318" y="200" />
+											<position x="318" y="240" />
+											<position x="553" y="240" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B4">
+									<connectionPointIn>
+										<connection refLocalId="4">
+											<position x="108" y="250" />
+											<position x="330" y="250" />
+											<position x="330" y="240" />
+											<position x="553" y="240" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+							</inOutVariables>
+							<outputVariables>
+								<variable formalParameter="displayValue">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="stepMotorSecond">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="stepMotorMinute">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="stepMotorHour">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="switchOnLight">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+							</outputVariables>
+							<addData>
+								<data name="Geensys.CB.UUID" handleUnknown="preserve">
+									<value>71e5ebfe-7b44-4013-96e3-70d719139f23</value>
+								</data>
+							</addData>
+						</block>
+						<block localId="7" width="240" height="96" typeName="lcd" instanceName="LCD">
+							<position x="985" y="96" />
+							<inputVariables>
+								<variable formalParameter="displayValue">
+									<connectionPointIn>
+										<connection refLocalId="6" formalParameter="displayValue">
+											<position x="913" y="168" />
+											<position x="949" y="168" />
+											<position x="949" y="144" />
+											<position x="985" y="144" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+							</inputVariables>
+							<inOutVariables>
+								<variable formalParameter="displayString">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="i">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+							</inOutVariables>
+							<outputVariables>
+							</outputVariables>
+							<addData>
+								<data name="Geensys.CB.UUID" handleUnknown="preserve">
+									<value>2d15c10c-359e-4cee-a0a5-1ced4977c6e0</value>
+								</data>
+							</addData>
+						</block>
+						<block localId="8" width="240" height="96" typeName="motors" instanceName="motors">
+							<position x="985" y="216" />
+							<inputVariables>
+								<variable formalParameter="stepMotorSecond">
+									<connectionPointIn>
+										<connection refLocalId="6" formalParameter="stepMotorSecond">
+											<position x="913" y="192" />
+											<position x="949" y="192" />
+											<position x="949" y="264" />
+											<position x="985" y="264" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="stepMotorMinute">
+									<connectionPointIn>
+										<connection refLocalId="6" formalParameter="stepMotorMinute">
+											<position x="913" y="216" />
+											<position x="944" y="216" />
+											<position x="944" y="288" />
+											<position x="985" y="288" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="stepMotorHour">
+									<connectionPointIn>
+										<connection refLocalId="6" formalParameter="stepMotorHour">
+											<position x="913" y="240" />
+											<position x="939" y="240" />
+											<position x="939" y="312" />
+											<position x="985" y="312" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+							</inputVariables>
+							<inOutVariables>
+								<variable formalParameter="hourHand">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="minuteHand">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="secondHand">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+							</inOutVariables>
+							<outputVariables>
+							</outputVariables>
+							<addData>
+								<data name="Geensys.CB.UUID" handleUnknown="preserve">
+									<value>bd8ad5fc-5883-42db-9d7b-a63ed5bc53e0</value>
+								</data>
+							</addData>
+						</block>
+						<block localId="9" width="240" height="96" typeName="light" instanceName="light">
+							<position x="985" y="336" />
+							<inputVariables>
+								<variable formalParameter="switchOnLight">
+									<connectionPointIn>
+										<connection refLocalId="6" formalParameter="switchOnLight">
+											<position x="913" y="240" />
+											<position x="944" y="240" />
+											<position x="944" y="384" />
+											<position x="985" y="384" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+							</inputVariables>
+							<inOutVariables>
+							</inOutVariables>
+							<outputVariables>
+							</outputVariables>
+							<addData>
+								<data name="Geensys.CB.UUID" handleUnknown="preserve">
+									<value>ab58be51-e200-409b-ae17-a242d7219ac3</value>
+								</data>
+							</addData>
+						</block>
+					</FBD>
+				</body>
+				<addData>
+					<data name="Geensys.CB.AutomaticScheduling" handleUnknown="preserve">
+						<value>true</value>
+					</data>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+			<pou name="environment" pouType="functionBlock">
+				<interface>
+					<inputVars>
+						<variable name="depth">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>cc258199-95eb-4bf3-a549-12bd72342a59</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<inOutVars>
+						<variable name="B1">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>f175bd8c-3b30-4656-9060-7a0078f12985</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B2">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>1192898d-dd73-4031-a3e0-5164c38ce3f3</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B3">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>32c596bb-c540-4110-8b3e-a2ed7b9581b9</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B4">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>42fef878-7331-44dd-bc63-d4dd002f2cb9</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="hydrostaticPressure">
+							<type>
+								<REAL />
+							</type>
+							<initialValue>
+								<simpleValue value="0.0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>df8c8ac0-330d-491f-b388-eed244ae345c</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="absolutePressure">
+							<type>
+								<REAL />
+							</type>
+							<initialValue>
+								<simpleValue value="0.0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>619cbc3d-d963-4519-b3bc-5f44475eeb8c</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inoutVars</value>
+							</data>
+						</addData>
+					</inOutVars>
+					<outputVars>
+						<variable name="pressure">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>c86c3c5f-d80c-4018-a643-db8dcbb3cef6</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="tick">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>26573843-ba17-4c5f-9c8e-5028e5e1540a</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>outputVars</value>
+							</data>
+						</addData>
+					</outputVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+					<action name="C_source_code">
+						<body>
+							<ST></ST>
+						</body>
+					</action>
+				</actions>
+				<addData>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+			<pou name="controller" pouType="program">
+				<interface>
+					<inputVars>
+						<variable name="pressure">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>4faf5d1c-726e-4215-bf18-0f3689e8500a</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="tick">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>43b3b65e-6da2-4ad2-9bb4-03e57cd0c921</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<inOutVars>
+						<variable name="B1">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>f359b6d1-8975-4e8e-a1d1-dd728d8ced5a</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B2">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>2b3a5c4f-8151-4eae-957e-e6c5b8d239eb</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B3">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>78b3d79f-0b56-4f08-9397-92d5a785d67c</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B4">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>a92cc5d5-f274-4766-ac3d-0dcd81539b40</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inoutVars</value>
+							</data>
+						</addData>
+					</inOutVars>
+					<outputVars>
+						<variable name="displayValue">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>b4f6b142-7679-467b-a9a3-8d174f565e80</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="stepMotorSecond">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>4942c6be-994d-40b4-a356-b3c6302fb392</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="stepMotorMinute">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>3a5b1927-2330-4463-87db-fc204ccd3be6</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="stepMotorHour">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>825d8c17-7b80-4e92-a343-bcad42e6eddc</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="switchOnLight">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>2a9806d3-535a-4450-8bdb-78811124308e</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>outputVars</value>
+							</data>
+						</addData>
+					</outputVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+				</actions>
+				<body>
+					<FBD>
+						<inVariable localId="0">
+							<position x="100" y="100" />
+							<expression>pressure</expression>
+						</inVariable>
+						<inVariable localId="1">
+							<position x="100" y="150" />
+							<expression>tick</expression>
+						</inVariable>
+						<inOutVariable localId="2">
+							<position x="100" y="200" />
+							<expression>B1</expression>
+						</inOutVariable>
+						<inOutVariable localId="3">
+							<position x="100" y="250" />
+							<expression>B2</expression>
+						</inOutVariable>
+						<inOutVariable localId="4">
+							<position x="100" y="300" />
+							<expression>B3</expression>
+						</inOutVariable>
+						<inOutVariable localId="5">
+							<position x="100" y="350" />
+							<expression>B4</expression>
+						</inOutVariable>
+						<outVariable localId="6">
+							<position x="1100" y="400" />
+							<connectionPointIn>
+								<connection refLocalId="7" formalParameter="displayValue" />
+							</connectionPointIn>
+							<expression>displayValue</expression>
+						</outVariable>
+						<outVariable localId="8">
+							<position x="1100" y="450" />
+							<connectionPointIn>
+								<connection refLocalId="9" formalParameter="stepMotorSecond" />
+							</connectionPointIn>
+							<expression>stepMotorSecond</expression>
+						</outVariable>
+						<outVariable localId="10">
+							<position x="1100" y="500" />
+							<connectionPointIn>
+								<connection refLocalId="9" formalParameter="stepMotorMinute" />
+							</connectionPointIn>
+							<expression>stepMotorMinute</expression>
+						</outVariable>
+						<outVariable localId="11">
+							<position x="1100" y="550" />
+							<connectionPointIn>
+								<connection refLocalId="9" formalParameter="stepMotorHour" />
+							</connectionPointIn>
+							<expression>stepMotorHour</expression>
+						</outVariable>
+						<outVariable localId="12">
+							<position x="1100" y="600" />
+							<connectionPointIn>
+								<connection refLocalId="7" formalParameter="switchOnLight" />
+							</connectionPointIn>
+							<expression>switchOnLight</expression>
+						</outVariable>
+						<block localId="9" width="528" height="120" typeName="timemanagement" instanceName="timeManagement">
+							<position x="457" y="72" />
+							<inputVariables>
+								<variable formalParameter="tick">
+									<connectionPointIn>
+										<connection refLocalId="1">
+											<position x="108" y="150" />
+											<position x="275" y="150" />
+											<position x="275" y="120" />
+											<position x="457" y="120" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+							</inputVariables>
+							<inOutVariables>
+								<variable formalParameter="B1">
+									<connectionPointIn>
+										<connection refLocalId="2">
+											<position x="108" y="200" />
+											<position x="277" y="200" />
+											<position x="277" y="144" />
+											<position x="457" y="144" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B2">
+									<connectionPointIn>
+										<connection refLocalId="3">
+											<position x="108" y="250" />
+											<position x="280" y="250" />
+											<position x="280" y="168" />
+											<position x="457" y="168" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B3">
+									<connectionPointIn>
+										<connection refLocalId="4">
+											<position x="108" y="300" />
+											<position x="282" y="300" />
+											<position x="282" y="192" />
+											<position x="457" y="192" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B4">
+									<connectionPointIn>
+										<connection refLocalId="5">
+											<position x="108" y="350" />
+											<position x="282" y="350" />
+											<position x="282" y="192" />
+											<position x="457" y="192" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="tickCount">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="adjustMode">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+							</inOutVariables>
+							<outputVariables>
+								<variable formalParameter="stepMotorSecond">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="stepMotorMinute">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="stepMotorHour">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="hh">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="mn">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="sec">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+							</outputVariables>
+							<addData>
+								<data name="Geensys.CB.UUID" handleUnknown="preserve">
+									<value>f879ff47-810f-42e2-8f61-6c050f7a3d8a</value>
+								</data>
+							</addData>
+						</block>
+						<block localId="7" width="528" height="168" typeName="displaymanagement" instanceName="displayManagement">
+							<position x="457" y="264" />
+							<inputVariables>
+								<variable formalParameter="hh">
+									<connectionPointIn>
+										<connection refLocalId="9" formalParameter="hh">
+											<position x="985" y="192" />
+											<position x="1010" y="192" />
+											<position x="1010" y="216" />
+											<position x="422" y="216" />
+											<position x="422" y="312" />
+											<position x="457" y="312" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="mn">
+									<connectionPointIn>
+										<connection refLocalId="9" formalParameter="mn">
+											<position x="985" y="192" />
+											<position x="1010" y="192" />
+											<position x="1010" y="216" />
+											<position x="418" y="216" />
+											<position x="418" y="336" />
+											<position x="457" y="336" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="sec">
+									<connectionPointIn>
+										<connection refLocalId="9" formalParameter="sec">
+											<position x="985" y="192" />
+											<position x="1010" y="192" />
+											<position x="1010" y="216" />
+											<position x="413" y="216" />
+											<position x="413" y="360" />
+											<position x="457" y="360" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="tick">
+									<connectionPointIn>
+										<connection refLocalId="1">
+											<position x="108" y="150" />
+											<position x="270" y="150" />
+											<position x="270" y="384" />
+											<position x="457" y="384" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="pressure">
+									<connectionPointIn>
+										<connection refLocalId="0">
+											<position x="108" y="100" />
+											<position x="268" y="100" />
+											<position x="268" y="408" />
+											<position x="457" y="408" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+							</inputVariables>
+							<inOutVariables>
+								<variable formalParameter="B1">
+									<connectionPointIn>
+										<connection refLocalId="2">
+											<position x="108" y="200" />
+											<position x="265" y="200" />
+											<position x="265" y="432" />
+											<position x="457" y="432" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B2">
+									<connectionPointIn>
+										<connection refLocalId="3">
+											<position x="108" y="250" />
+											<position x="265" y="250" />
+											<position x="265" y="432" />
+											<position x="457" y="432" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B3">
+									<connectionPointIn>
+										<connection refLocalId="4">
+											<position x="108" y="300" />
+											<position x="265" y="300" />
+											<position x="265" y="432" />
+											<position x="457" y="432" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="B4">
+									<connectionPointIn>
+										<connection refLocalId="5">
+											<position x="108" y="350" />
+											<position x="265" y="350" />
+											<position x="265" y="432" />
+											<position x="457" y="432" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="displayTime">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="lampSwitchOnTime">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="pulseTime">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+							</inOutVariables>
+							<outputVariables>
+								<variable formalParameter="displayValue">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+								<variable formalParameter="switchOnLight">
+									<connectionPointOut>
+									</connectionPointOut>
+								</variable>
+							</outputVariables>
+							<addData>
+								<data name="Geensys.CB.UUID" handleUnknown="preserve">
+									<value>e0adebaf-ab75-43c7-9e54-a8f396463b3a</value>
+								</data>
+							</addData>
+						</block>
+					</FBD>
+				</body>
+				<addData>
+					<data name="Geensys.CB.AutomaticScheduling" handleUnknown="preserve">
+						<value>true</value>
+					</data>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+			<pou name="timemanagement" pouType="functionBlock">
+				<interface>
+					<inputVars>
+						<variable name="tick">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>aded2575-bd0c-43e5-ab01-716ed66abd2a</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<inOutVars>
+						<variable name="B1">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>93569b92-6db9-46bb-b289-049f081a0617</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B2">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>4d262b5c-2eb9-42fb-a950-1f781f8b534f</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B3">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>b6602bcc-5deb-4d18-825b-625ffff5791c</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B4">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>ebb155f9-f7fe-430f-85a3-b0fe388b5d57</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="tickCount">
+							<type>
+								<REAL />
+							</type>
+							<initialValue>
+								<simpleValue value="0.0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>f471add2-d852-419f-9bf8-212431349f79</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="adjustMode">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>602e1c29-101a-4359-adee-0d0998c2ade1</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inoutVars</value>
+							</data>
+						</addData>
+					</inOutVars>
+					<outputVars>
+						<variable name="stepMotorSecond">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>890bd6f6-59ae-4e2a-8fc7-8d898aad9048</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="stepMotorMinute">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>a876334b-29d5-4a84-bce6-4ae0fc945709</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="stepMotorHour">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>9d5f1695-d696-4d5f-84cb-d9a2eed98108</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="hh">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>858aa063-ae16-4066-af6c-b2e714b60577</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="mn">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>54425e08-50ca-43aa-bee9-4501abff29dd</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="sec">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>b1807bf1-c648-4ce8-9991-fe14dc74df5f</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>outputVars</value>
+							</data>
+						</addData>
+					</outputVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+					<action name="C_source_code">
+						<body>
+							<ST></ST>
+						</body>
+					</action>
+				</actions>
+				<addData>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+			<pou name="displaymanagement" pouType="functionBlock">
+				<interface>
+					<inputVars>
+						<variable name="hh">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>21bac9f0-c430-4cfe-b094-6299a05f3a98</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="mn">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>1efc52c4-b96b-4ce6-8bf4-3474d2a13ef8</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="sec">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>4525d8b7-76ed-4a14-a5ae-b59bf279016c</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="tick">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>39cf6028-d2b1-4a8b-878a-2b2afd7426b6</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="pressure">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>5e620440-7079-4403-989f-8ffcf8bfd856</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<inOutVars>
+						<variable name="B1">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>626fab8a-27af-415e-b17c-29fe457fd4a7</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B2">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>e8fa6d2e-2c73-4e66-b601-e65616c982ce</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B3">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>99605d0b-af84-468e-95f2-defee7fcb76a</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="B4">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>da157fe5-aff0-40af-bcdd-2137ac9aceae</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="displayTime">
+							<type>
+								<REAL />
+							</type>
+							<initialValue>
+								<simpleValue value="0.0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>8be0553a-51df-4549-81a2-5ce809e8936d</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="lampSwitchOnTime">
+							<type>
+								<REAL />
+							</type>
+							<initialValue>
+								<simpleValue value="0.0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>8acbe2c6-179f-47a7-a358-263d52d92441</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="pulseTime">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>c7bed8a8-b221-468f-81b3-2f07322ec236</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inoutVars</value>
+							</data>
+						</addData>
+					</inOutVars>
+					<outputVars>
+						<variable name="displayValue">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>3af3cbe3-c7fa-4b23-97d5-1cc252eb5b05</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="switchOnLight">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>28a78ec7-fa8e-498b-9f95-32f108a57b2f</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>outputVars</value>
+							</data>
+						</addData>
+					</outputVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+					<action name="C_source_code">
+						<body>
+							<ST></ST>
+						</body>
+					</action>
+				</actions>
+				<addData>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+			<pou name="lcd" pouType="functionBlock">
+				<interface>
+					<inputVars>
+						<variable name="displayValue">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>73831790-ea38-4f3a-8154-7510822b2511</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<inOutVars>
+						<variable name="displayString">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>68bbb4e2-0254-4643-bc25-df006c559d61</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="i">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>2a6591bd-86b7-472e-8bbf-6849cb30f935</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inoutVars</value>
+							</data>
+						</addData>
+					</inOutVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+					<action name="C_source_code">
+						<body>
+							<ST></ST>
+						</body>
+					</action>
+				</actions>
+				<addData>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+			<pou name="motors" pouType="functionBlock">
+				<interface>
+					<inputVars>
+						<variable name="stepMotorSecond">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>42bb646a-4e2f-4f13-ada1-f97262fea55c</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="stepMotorMinute">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>038eb303-14ea-45f0-866c-aa249e66827d</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="stepMotorHour">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>7db60f05-bef9-4e62-b84a-1e8fa5769d43</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<inOutVars>
+						<variable name="hourHand">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>36d89f16-0f3b-4ae4-a44c-fe62cbe6d74a</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="minuteHand">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>6b57324b-8eb0-48c0-96bf-2f8fea613311</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="secondHand">
+							<type>
+								<INT />
+							</type>
+							<initialValue>
+								<simpleValue value="0" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>26b70448-ef3d-40ce-9395-85bd02ea0531</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inoutVars</value>
+							</data>
+						</addData>
+					</inOutVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+					<action name="C_source_code">
+						<body>
+							<ST></ST>
+						</body>
+					</action>
+				</actions>
+				<addData>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+			<pou name="light" pouType="functionBlock">
+				<interface>
+					<inputVars>
+						<variable name="switchOnLight">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>8733507c-8a1a-4a20-aa70-fa9a7ead54e8</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+					<action name="C_source_code">
+						<body>
+							<ST></ST>
+						</body>
+					</action>
+				</actions>
+				<addData>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+		</pous>
+	</types>
+	<instances>
+		<configurations />
+	</instances>
+</project>

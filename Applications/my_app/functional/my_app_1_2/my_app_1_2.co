@@ -1,0 +1,13 @@
+ entree IB1
+ ~ LB2
+ ~ LB3
+ ~ LB4
+ ~ LB5
+ sub1/entree IB1
+ sub1/entree2 IB1
+ sub1/entree3 IB1
+ sub1/entree4 IB1
+ sub11/entree IB5
+ sub11/entree2 IB4
+ sub11/entree3 IB3
+ sub11/entree4 IB2

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- From extra/org.ssp-standard.ssp-traceability.stmd/Design-Specification-DC-Motor-Model.ssd -->
+
+<project xmlns="http://www.plcopen.org/xml/tc6_0201">
+    <fileHeader companyName="Dassault Systèmes" productName="orchideo | easySSP (eXXcellent solutions GmbH)" productVersion="orchideo | easySSP (eXXcellent solutions GmbH)" creationDateTime="2022-04-20T15:00:39Z" contentDescription="extra/org.ssp-standard.ssp-traceability.stmd/Design-Specification-DC-Motor-Model.ssd"/>
+    <contentHeader name="DesignSpecificationDCMotorModel">
+        <coordinateInfo>
+            <fbd>
+                <scaling x="100" y="100"/>
+            </fbd>
+            <ld>
+                <scaling x="100" y="100"/>
+            </ld>
+            <sfc>
+                <scaling x="32" y="8"/>
+            </sfc>
+        </coordinateInfo>
+    </contentHeader>
+    <types>
+        <pous>
+            <pou name="DesignSpecificationDCMotorModel.DesignSpecificationDCMotorModel" pouType="program">
+                <interface>
+                    <inputVars/>
+                    <outputVars>
+                        <variable name="wB">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="U">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="M_mot">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="I">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                    </outputVars>
+                    <inOutVars/>
+                    <addData/>
+                </interface>
+                <actions/>
+                <body>
+                    <FBD>
+                        <outVariable localId="0">
+                            <position x="1100" y="100"/>
+                            <connectionPointIn>
+<connection refLocalId="5" formalParameter="wB"/>
+                            </connectionPointIn>
+                            <expression>wB</expression>
+                        </outVariable>
+                        <outVariable localId="1">
+                            <position x="1100" y="150"/>
+                            <connectionPointIn>
+<connection refLocalId="4" formalParameter="U"/>
+                            </connectionPointIn>
+                            <expression>U</expression>
+                        </outVariable>
+                        <outVariable localId="2">
+                            <position x="1100" y="200"/>
+                            <connectionPointIn>
+<connection refLocalId="5" formalParameter="M_mot"/>
+                            </connectionPointIn>
+                            <expression>M_mot</expression>
+                        </outVariable>
+                        <outVariable localId="3">
+                            <position x="1100" y="250"/>
+                            <connectionPointIn>
+<connection refLocalId="5" formalParameter="I"/>
+                            </connectionPointIn>
+                            <expression>I</expression>
+                        </outVariable>
+                        <block localId="4" width="200" height="100" typeName="stimuli_model" instanceName="stimuli_model">
+                            <position x="480" y="100"/>
+                            <inputVariables/>
+                            <inOutVariables/>
+                            <outputVariables/>
+                        </block>
+                        <block localId="5" width="200" height="100" typeName="SuT" instanceName="SuT">
+                            <position x="480" y="300"/>
+                            <inputVariables>
+<variable formalParameter="U">
+    <connectionPointIn>
+        <connection refLocalId="4" formalParameter="U"/>
+    </connectionPointIn>
+</variable>
+<variable formalParameter="M_load">
+    <connectionPointIn>
+        <connection refLocalId="4" formalParameter="M_load"/>
+    </connectionPointIn>
+</variable>
+                            </inputVariables>
+                            <inOutVariables/>
+                            <outputVariables/>
+                        </block>
+                    </FBD>
+                </body>
+            </pou>
+            <pou name="stimuli_model" pouType="functionBlock">
+                <interface>
+                    <inputVars/>
+                    <outputVars>
+                        <variable name="U">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="M_load">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                    </outputVars>
+                    <inOutVars/>
+                    <addData/>
+                </interface>
+                <actions>
+                    <action name="C_source_code">
+                        <body>
+                            <ST/>
+                        </body>
+                    </action>
+                </actions>
+                <body/>
+            </pou>
+            <pou name="SuT" pouType="program">
+                <interface>
+                    <inputVars>
+                        <variable name="M_load">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="U">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                    </inputVars>
+                    <outputVars>
+                        <variable name="M_mot">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="phiB">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="wB">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="I">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                    </outputVars>
+                    <inOutVars/>
+                    <addData/>
+                </interface>
+                <actions/>
+                <body>
+                    <FBD>
+                        <outVariable localId="0">
+                            <position x="1100" y="100"/>
+                            <connectionPointIn>
+<connection refLocalId="7" formalParameter="M"/>
+                            </connectionPointIn>
+                            <expression>M_mot</expression>
+                        </outVariable>
+                        <inVariable localId="1">
+                            <position x="100" y="150"/>
+                            <expression>M_load</expression>
+                        </inVariable>
+                        <inVariable localId="2">
+                            <position x="100" y="200"/>
+                            <expression>U</expression>
+                        </inVariable>
+                        <outVariable localId="3">
+                            <position x="1100" y="250"/>
+                            <connectionPointIn>
+<connection refLocalId="6" formalParameter="phiB"/>
+                            </connectionPointIn>
+                            <expression>phiB</expression>
+                        </outVariable>
+                        <outVariable localId="4">
+                            <position x="1100" y="300"/>
+                            <connectionPointIn>
+<connection refLocalId="6" formalParameter="wB"/>
+                            </connectionPointIn>
+                            <expression>wB</expression>
+                        </outVariable>
+                        <outVariable localId="5">
+                            <position x="1100" y="350"/>
+                            <connectionPointIn>
+<connection refLocalId="7" formalParameter="I"/>
+                            </connectionPointIn>
+                            <expression>I</expression>
+                        </outVariable>
+                        <block localId="6" width="200" height="100" typeName="edrive_mass_spec" instanceName="edrive_mass_spec">
+                            <position x="480" y="100"/>
+                            <inputVariables>
+<variable formalParameter="M_B">
+    <connectionPointIn>
+        <connection refLocalId="1"/>
+    </connectionPointIn>
+</variable>
+<variable formalParameter="M_A">
+    <connectionPointIn>
+        <connection refLocalId="7" formalParameter="M"/>
+    </connectionPointIn>
+</variable>
+                            </inputVariables>
+                            <inOutVariables/>
+                            <outputVariables/>
+                        </block>
+                        <block localId="7" width="200" height="100" typeName="emachine_model" instanceName="emachine_model">
+                            <position x="480" y="300"/>
+                            <inputVariables>
+<variable formalParameter="U">
+    <connectionPointIn>
+        <connection refLocalId="2"/>
+    </connectionPointIn>
+</variable>
+<variable formalParameter="phi">
+    <connectionPointIn>
+        <connection refLocalId="6" formalParameter="phiA"/>
+    </connectionPointIn>
+</variable>
+<variable formalParameter="w">
+    <connectionPointIn>
+        <connection refLocalId="6" formalParameter="wA"/>
+    </connectionPointIn>
+</variable>
+                            </inputVariables>
+                            <inOutVariables/>
+                            <outputVariables/>
+                        </block>
+                    </FBD>
+                </body>
+            </pou>
+            <pou name="edrive_mass_spec" pouType="functionBlock">
+                <interface>
+                    <inputVars>
+                        <variable name="M_B">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="M_A">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                    </inputVars>
+                    <outputVars>
+                        <variable name="phiA">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="wB">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="wA">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="phiB">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                    </outputVars>
+                    <inOutVars/>
+                    <addData/>
+                </interface>
+                <actions>
+                    <action name="C_source_code">
+                        <body>
+                            <ST/>
+                        </body>
+                    </action>
+                </actions>
+                <body/>
+            </pou>
+            <pou name="emachine_model" pouType="functionBlock">
+                <interface>
+                    <inputVars>
+                        <variable name="w">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="U">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="phi">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                    </inputVars>
+                    <outputVars>
+                        <variable name="M">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                        <variable name="I">
+                            <type>
+<REAL/>
+                            </type>
+                            <initialValue>
+<simpleValue value="0.0"/>
+                            </initialValue>
+                        </variable>
+                    </outputVars>
+                    <inOutVars/>
+                    <addData/>
+                </interface>
+                <actions>
+                    <action name="C_source_code">
+                        <body>
+                            <ST/>
+                        </body>
+                    </action>
+                </actions>
+                <body/>
+            </pou>
+        </pous>
+    </types>
+</project>

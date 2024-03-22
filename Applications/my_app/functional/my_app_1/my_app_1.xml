@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Generator: ControlBuild -->
+
+<project xmlns="http://www.plcopen.org/xml/tc6_0201.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.plcopen.org/xml/tc6_0201.xsd TC6_XML_V10.xsd">
+	<fileHeader companyName="Dassault Syst&#232;mes" productName="ControlBuild" productVersion="2024x Refresh1" creationDateTime="2024-03-13T18:06:36-01:00" />
+	<contentHeader name="my_app_1">
+		<coordinateInfo>
+			<fbd>
+				<scaling x="100" y="100" />
+			</fbd>
+			<ld>
+				<scaling x="100" y="100" />
+			</ld>
+			<sfc>
+				<scaling x="32" y="8" />
+			</sfc>
+		</coordinateInfo>
+	</contentHeader>
+	<types>
+		<dataTypes />
+		<pous>
+			<pou name="my_app.my_app_1" pouType="program">
+				<interface>
+					<inputVars>
+						<variable name="entree">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>fcc91e72-ce69-467c-a4c8-faa6280dc108</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+				</actions>
+				<body>
+					<FBD>
+						<inVariable localId="0">
+							<position x="100" y="100" />
+							<expression>entree</expression>
+						</inVariable>
+						<block localId="1" width="200" height="260" typeName="sub1" instanceName="sub1">
+							<position x="480" y="100" />
+							<inputVariables>
+								<variable formalParameter="entree">
+									<connectionPointIn>
+										<connection refLocalId="0">
+											<position x="108" y="100" />
+											<position x="289" y="100" />
+											<position x="289" y="148" />
+											<position x="480" y="148" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="entree2">
+									<connectionPointIn>
+										<connection refLocalId="0">
+											<position x="108" y="100" />
+											<position x="287" y="100" />
+											<position x="287" y="172" />
+											<position x="480" y="172" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="entree3">
+									<connectionPointIn>
+										<connection refLocalId="0">
+											<position x="108" y="100" />
+											<position x="284" y="100" />
+											<position x="284" y="196" />
+											<position x="480" y="196" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="entree4">
+									<connectionPointIn>
+										<connection refLocalId="0">
+											<position x="108" y="100" />
+											<position x="282" y="100" />
+											<position x="282" y="220" />
+											<position x="480" y="220" />
+										</connection>
+									</connectionPointIn>
+								</variable>
+							</inputVariables>
+							<inOutVariables>
+							</inOutVariables>
+							<outputVariables>
+							</outputVariables>
+							<addData>
+								<data name="Geensys.CB.UUID" handleUnknown="preserve">
+									<value>1f0e1faf-4f54-4b76-ab42-b7d68837cbb0</value>
+								</data>
+							</addData>
+						</block>
+						<block localId="2" width="200" height="260" typeName="sub1" instanceName="sub11">
+							<position x="480" y="408" />
+							<inputVariables>
+								<variable formalParameter="entree">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="entree2">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="entree3">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+								<variable formalParameter="entree4">
+									<connectionPointIn>
+									</connectionPointIn>
+								</variable>
+							</inputVariables>
+							<inOutVariables>
+							</inOutVariables>
+							<outputVariables>
+							</outputVariables>
+							<addData>
+								<data name="Geensys.CB.UUID" handleUnknown="preserve">
+									<value>83e61651-a578-4539-a718-c202ad401e74</value>
+								</data>
+							</addData>
+						</block>
+					</FBD>
+				</body>
+				<addData>
+					<data name="Geensys.CB.AutomaticScheduling" handleUnknown="preserve">
+						<value>true</value>
+					</data>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+			<pou name="sub1" pouType="program">
+				<interface>
+					<inputVars>
+						<variable name="entree">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>ab8297e4-3a87-46ed-b451-5e6453ed63f7</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="entree2">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>8edd1dc5-8e62-460f-bfa6-14be10d2c016</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="entree3">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>890f58ff-7c11-481e-ba01-0561acb50111</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<variable name="entree4">
+							<type>
+								<BOOL />
+							</type>
+							<initialValue>
+								<simpleValue value="false" />
+							</initialValue>
+							<addData>
+								<data name="Geensys.CB.IdentifierProperty" handleUnknown="preserve">
+									<value>3517712d-0c4a-4e3c-8c95-cebfafd4dc39</value>
+								</data>
+								<data name="Geensys.CB.visibility" handleUnknown="preserve">
+									<value>true</value>
+								</data>
+							</addData>
+						</variable>
+						<addData>
+							<data name="Geensys.CB.kind" handleUnknown="preserve">
+								<value>inputVars</value>
+							</data>
+						</addData>
+					</inputVars>
+					<addData>
+					</addData>
+				</interface>
+				<actions>
+				</actions>
+				<body>
+					<FBD>
+						<inVariable localId="0">
+							<position x="100" y="100" />
+							<expression>entree</expression>
+						</inVariable>
+						<inVariable localId="1">
+							<position x="100" y="150" />
+							<expression>entree2</expression>
+						</inVariable>
+						<inVariable localId="2">
+							<position x="100" y="200" />
+							<expression>entree3</expression>
+						</inVariable>
+						<inVariable localId="3">
+							<position x="100" y="250" />
+							<expression>entree4</expression>
+						</inVariable>
+					</FBD>
+				</body>
+				<addData>
+					<data name="Geensys.CB.AutomaticScheduling" handleUnknown="preserve">
+						<value>true</value>
+					</data>
+					<data name="Geensys.CB.INSTANCE_NAMIMG_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+					<data name="Geensys.CB.COMMENTS_PATTERN" handleUnknown="preserve">
+						<value></value>
+					</data>
+				</addData>
+			</pou>
+		</pous>
+	</types>
+	<instances>
+		<configurations />
+	</instances>
+</project>

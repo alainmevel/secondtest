@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Generator: ControlBuild -->
+
+<CB_COMPONENT NAME="tni_clock_4" COMMENTS="" COMMENTS_PATTERN="" PICTURE_PATH="" INSTANCE_NAMIMG_PATTERN="" COMPONENT_CLASS="" COMPONENT_CLASS_UUID="" AP_DEC="" SIGNATURE="" GENERATION_DATE="" SAFE_MODE="False" BREAKPOINT="False" GEN_STATUS="good">
+	<MODEL_REQUIREMENTS>
+&#9;
+		<COMMENTS />
+&#9;
+		<FUNCTIONAL_TREE TYPE="mac">
+&#9;&#9;
+			<CHILDREN>
+&#9;&#9;&#9;
+				<NODE NAME="environment" TYPE="c" MODEL_NAME="environment">
+&#9;&#9;&#9;&#9;
+					<NODE NAME="controller" TYPE="mac" MODEL_NAME="controller">
+&#9;&#9;&#9;&#9;&#9;
+						<COMMENTS />
+&#9;&#9;&#9;&#9;&#9;
+						<CHILDREN>
+&#9;&#9;&#9;&#9;&#9;&#9;
+							<NODE NAME="timeManagement" TYPE="c" MODEL_NAME="timemanagement">
+								<NODE NAME="displayManagement" TYPE="c" MODEL_NAME="displaymanagement" /></NODE>
+&#9;&#9;&#9;&#9;&#9;&#9;
+							<NODE NAME="LCD" TYPE="c" MODEL_NAME="lcd">
+								<NODE NAME="motors" TYPE="c" MODEL_NAME="motors">
+									<NODE NAME="light" TYPE="c" MODEL_NAME="light" /></NODE></NODE></CHILDREN></NODE></NODE></CHILDREN></FUNCTIONAL_TREE></MODEL_REQUIREMENTS>
+</CB_COMPONENT>
